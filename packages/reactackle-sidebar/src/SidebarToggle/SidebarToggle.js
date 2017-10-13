@@ -1,9 +1,7 @@
-'use strict';
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { noop } from 'reactackle-core';
-import { Icon, iconPropType } from 'reactackle-icon';
+import { IconArrowChevronLeft } from 'reactackle-icons';
 import { SidebarToggleStyled } from './styles/SidebarToggleStyled';
 import { ToggleIconStyled } from './styles/ToggleIconStyled';
 import { ToggleTextStyled } from './styles/ToggleTextStyled';
@@ -13,7 +11,7 @@ const propTypes = {
   toggleButtonText: PropTypes.string,
   expanded: PropTypes.bool,
   autoCollapsing: PropTypes.bool,
-  icon: iconPropType,
+  icon: PropTypes.node,
   onClick: PropTypes.func,
 };
 
@@ -21,15 +19,16 @@ const defaultProps = {
   toggleButtonText: 'Collapse',
   expanded: false,
   autoCollapsing: false,
-  icon: {
-    name: 'angle-left',
-    src: '',
-    type: 'font-awesome',
-  },
+  icon: IconArrowChevronLeft,
   onClick: noop,
 };
 
 export default function SidebarToggle(props) {
+  const icon = React.cloneElement(
+    props.icon,
+    { size: 'custom', color: 'currentColor' }// eslint-disable-line comma-dangle
+  );
+
   return (
     <SidebarToggleStyled
       expanded={props.expanded}
@@ -39,8 +38,9 @@ export default function SidebarToggle(props) {
       <ToggleIconStyled
         expanded={props.expanded}
         autoCollapsing={props.autoCollapsing}
+        type="svg"
       >
-        <Icon {...props.icon} color="inherit" size="inherit" />
+        {icon}
       </ToggleIconStyled>
 
       <ToggleContentStyled>

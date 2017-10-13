@@ -1,8 +1,7 @@
-'use strict';
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import TextareaAutosize from 'react-textarea-autosize';
+import { TooltipIcon } from 'reactackle-tooltip-icon';
 
 import {
   withTheme,
@@ -11,8 +10,7 @@ import {
   isUndef,
   registerDefaultComponentTheme,
 } from 'reactackle-core';
-import { Icon } from 'reactackle-icon';
-import { TooltipIcon } from 'reactackle-tooltip-icon';
+
 import { InfoBoxStyled } from './styles/InfoBoxStyled';
 import { IconOuterStyled } from './styles/IconOuterStyled';
 import { IconInnerStyled } from './styles/IconInnerStyled';
@@ -92,13 +90,13 @@ const propTypes = {
    */
   clearingIcon: PropTypes.bool,
   /**
-   * Add icon behind TextField
+   * Add icon behind TextField (see IconSvg or IconCustom props)
    */
-  iconOuter: PropTypes.shape(Icon.propTypes),
+  iconOuter: PropTypes.node,
   /**
-   * Show icon inside TextField's boundaries
+   * Show icon inside TextField's boundaries (see IconSvg or IconCustom props)
    */
-  iconInner: PropTypes.shape(Icon.propTypes),
+  iconInner: PropTypes.node,
   /**
    * Define label position
    */
@@ -409,10 +407,7 @@ class _TextField extends Component {
         labelPosition={this.props.labelPosition}
         dense={this.props.dense}
         fullWidth={this.props.fullWidth}
-        iconOuter={
-          this.props.iconOuter &&
-          (this.props.iconOuter.name || this.props.iconOuter.src)
-        }
+        iconOuter={this.props.iconOuter}
       >
         {message}
         {counter}
@@ -421,10 +416,27 @@ class _TextField extends Component {
   }
 
   _renderInnerButton() {
-    const clearingIconPath = this.props.theme.reactackle.components.textfield
-      .clearingIcon;
-    const passwordIconPath = this.props.theme.reactackle.components.textfield
-      .passwordIcon;
+    const componentPath = this.props.theme.reactackle.components.textfield;
+    const clearingIconPath = componentPath.clearingIcon;
+    const passwordIconPath = componentPath.passwordIcon;
+
+    const passwordIcon = React.cloneElement(
+      passwordIconPath.src,
+      {
+        size: 'custom',
+        color: 'currentColor',
+        onClick: this._handleHideValue,
+      }// eslint-disable-line comma-dangle
+    );
+    const clearingIcon = React.cloneElement(
+      clearingIconPath.src,
+      {
+        size: 'custom',
+        color: 'currentColor',
+        onClick: this._handleClearValue,
+      }// eslint-disable-line comma-dangle
+    );
+    
 
     if (typeof this.state.hidden === 'boolean') {
       return (
@@ -434,15 +446,9 @@ class _TextField extends Component {
           dense={this.props.dense}
           fullWidth={this.props.fullWidth}
           colorScheme={this.props.colorScheme}
+          type={passwordIconPath.type}
         >
-          <Icon
-            name={passwordIconPath.name}
-            src={passwordIconPath.src}
-            type={passwordIconPath.type}
-            size="inherit"
-            color="inherit"
-            onClick={this._handleHideValue}
-          />
+          {passwordIcon}
         </InnerButton>
       );
     } else if (this.props.clearingIcon) {
@@ -453,15 +459,9 @@ class _TextField extends Component {
           dense={this.props.dense}
           fullWidth={this.props.fullWidth}
           colorScheme={this.props.colorScheme}
+          type={clearingIconPath.type}
         >
-          <Icon
-            name={clearingIconPath.name}
-            src={clearingIconPath.src}
-            type={clearingIconPath.type}
-            size="inherit"
-            color="inherit"
-            onClick={this._handleClearValue}
-          />
+          {clearingIcon}
         </InnerButton>
       );
     }
@@ -470,8 +470,15 @@ class _TextField extends Component {
   }
 
   _renderIconOuter() {
+    const { iconOuter } = this.props;
+    if (!iconOuter) return null;
+
+    const icon = React.cloneElement(
+      iconOuter,
+      { size: 'custom', color: 'currentColor' }// eslint-disable-line comma-dangle
+    );
+
     return (
-      this.props.iconOuter &&
       <IconOuterStyled
         disabled={this.props.disabled}
         focus={this.state.focus}
@@ -479,13 +486,22 @@ class _TextField extends Component {
         fullWidth={this.props.fullWidth}
         colorScheme={this.props.colorScheme}
         htmlFor={this.id}
+        type="svg"
       >
-        <Icon {...this.props.iconOuter} size="inherit" color="inherit" />
+        {icon}
       </IconOuterStyled>
     );
   }
 
   _renderIconInner() {
+    const { iconInner } = this.props;
+    if (!iconInner) return null;
+
+    const icon = React.cloneElement(
+      iconInner,
+      { size: 'custom', color: 'currentColor' }// eslint-disable-line comma-dangle
+    );
+
     return (
       this.props.iconInner &&
       <IconInnerStyled
@@ -494,8 +510,9 @@ class _TextField extends Component {
         dense={this.props.dense}
         fullWidth={this.props.fullWidth}
         colorScheme={this.props.colorScheme}
+        type="svg"
       >
-        <Icon {...this.props.iconInner} size="inherit" color="inherit" />
+        {icon}
       </IconInnerStyled>
     );
   }
@@ -536,10 +553,7 @@ class _TextField extends Component {
         dense={this.props.dense}
         fullWidth={this.props.fullWidth}
         colorScheme={this.props.colorScheme}
-        iconOuter={
-          this.props.iconOuter &&
-          (this.props.iconOuter.name || this.props.iconOuter.src)
-        }
+        iconOuter={this.props.iconOuter}
         bordered={this.props.bordered}
       >
         <LabelTextStyled>
@@ -612,7 +626,7 @@ class _TextField extends Component {
   _renderTextField(textFieldProps) {
     const TextFieldElement = this.state.textFieldElement;
     const isPassword = textFieldProps.type === 'password' && this.state.hidden;
-    const inputType = isPassword ? 'password' : textFieldProps.type;
+    const inputType = isPassword ? textFieldProps.type : 'text';
 
     return <TextFieldElement {...textFieldProps} type={inputType} />;
   }

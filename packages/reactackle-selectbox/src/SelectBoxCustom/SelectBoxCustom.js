@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { TooltipIcon } from 'reactackle-tooltip-icon';
 import { AutoPosition } from 'reactackle-autoposition';
-import { Icon } from 'reactackle-icon';
 import { noop, isUndef, withTheme } from 'reactackle-core';
 import { OptionPropTypeCustom } from '../OptionPropType/OptionPropTypeCustom';
 import { OptionsListCustom } from '../OptionsListCustom/OptionsListCustom';
@@ -306,6 +305,11 @@ class _SelectBoxCustom extends Component {
     const iconSettingsPath = this.props.theme.reactackle.components.selectBox
       .icon.source;
 
+    const icon = React.cloneElement(
+      iconSettingsPath.src,
+      { size: 'custom', color: 'currentColor' }// eslint-disable-line comma-dangle
+    );
+
     return (
       <SelectBoxStyled>
         <SelectBoxCustomStyled onClick={this._handleWrapperClick}>
@@ -336,14 +340,9 @@ class _SelectBoxCustom extends Component {
                   disabled={this.props.disabled}
                   focused={this.state.open}
                   colorScheme={this.props.colorScheme}
+                  type={iconSettingsPath.type}
                 >
-                  <Icon
-                    name={iconSettingsPath.name}
-                    src={iconSettingsPath.src}
-                    type={iconSettingsPath.type}
-                    size="inherit"
-                    color="inherit"
-                  />
+                  {icon}
                 </ArrowIconStyled>
               </ButtonStyled>
               <AutoPosition
