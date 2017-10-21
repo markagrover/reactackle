@@ -74,7 +74,7 @@ const mainConfig = {
   ],
 
   devServer: {
-    port: 8093,
+    port: 8090,
     contentBase: 'dist/',
     publicPath: '/',
   },
