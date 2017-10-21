@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import {
   IconCustom,
-  iconCustomSizeMixin,
+  iconSizeMixin,
 } from 'reactackle';
 
 import {
@@ -25,7 +25,7 @@ import Snippet4 from './snippets/4.snippet';
 import Snippet5 from './snippets/5.snippet';
 
 const TestWrapper = styled.div`
-  ${iconCustomSizeMixin('70px', '42px', '50px')}
+  ${iconSizeMixin('70px', '42px', '50px')}
 `;
 
 export const IconCustomDemoRoute = () => (
