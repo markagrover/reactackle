@@ -417,22 +417,16 @@ class _TextField extends Component {
 
   _renderInnerButton() {
     const componentPath = this.props.theme.reactackle.components.textfield;
-    const clearingIconPath = componentPath.clearingIcon;
-    const passwordIconPath = componentPath.passwordIcon;
 
     const passwordIcon = React.cloneElement(
-      passwordIconPath.src,
+      componentPath.passwordIcon,
       {
-        size: 'custom',
-        color: 'currentColor',
         onClick: this._handleHideValue,
       }// eslint-disable-line comma-dangle
     );
     const clearingIcon = React.cloneElement(
-      clearingIconPath.src,
+      componentPath.clearingIcon,
       {
-        size: 'custom',
-        color: 'currentColor',
         onClick: this._handleClearValue,
       }// eslint-disable-line comma-dangle
     );
@@ -446,7 +440,6 @@ class _TextField extends Component {
           dense={this.props.dense}
           fullWidth={this.props.fullWidth}
           colorScheme={this.props.colorScheme}
-          type={passwordIconPath.type}
         >
           {passwordIcon}
         </InnerButton>
@@ -459,7 +452,6 @@ class _TextField extends Component {
           dense={this.props.dense}
           fullWidth={this.props.fullWidth}
           colorScheme={this.props.colorScheme}
-          type={clearingIconPath.type}
         >
           {clearingIcon}
         </InnerButton>

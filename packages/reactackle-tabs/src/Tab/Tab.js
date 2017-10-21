@@ -78,19 +78,13 @@ export default class Tab extends Component {
   _renderTabIcon() {
     const { icon } = this.props;
     if (!icon) return null;
-
-    const clonedIcon = React.cloneElement(
-      icon,
-      { size: 'custom', color: 'currentColor' }// eslint-disable-line comma-dangle
-    );
-
+    
     return (
       <TabIconStyled
         colorScheme={this.props.colorScheme}
         selected={this.props.isSelected}
-        type="svg"
       >
-        {clonedIcon}
+        {icon}
       </TabIconStyled>
     );
   }

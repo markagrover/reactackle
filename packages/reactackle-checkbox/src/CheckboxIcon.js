@@ -22,14 +22,7 @@ const defaultProps = {
 };
 
 const CheckboxIconComponent = props => {
-  const iconSettingsPath =
-    props.theme.reactackle.components.checkbox.icon.source;
   const Tooltip = props.Tooltip;
-
-  const icon = React.cloneElement(
-    iconSettingsPath.src,
-    { size: 'custom', color: 'currentColor' }// eslint-disable-line comma-dangle
-  );
 
   const tooltip = props.tooltipText
     ? <Tooltip text={props.tooltipText} />
@@ -50,10 +43,9 @@ const CheckboxIconComponent = props => {
     <CheckboxIconStyled
       checked={props.checked}
       disabled={props.disabled}
-      type={iconSettingsPath.type}
       {...tooltipManagementProps}
     >
-      {icon}
+      {props.theme.reactackle.components.checkbox.icon.src}
       {tooltip}
     </CheckboxIconStyled>
   );

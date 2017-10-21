@@ -10,7 +10,7 @@ export const iconsPropType = {
   /** Set icon size */
   size: PropTypes.oneOf(['custom', 'small', 'normal', 'large', 'xlarge']),
   /** Set icon's color scheme */
-  colorScheme: PropTypes.oneOf(['light', 'dark']),
+  colorScheme: PropTypes.oneOf(['light', 'dark', 'default']),
   /** Set exact icon's border color */
   color: PropTypes.string,
   /** Set icon's background color */

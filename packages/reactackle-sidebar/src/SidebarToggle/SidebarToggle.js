@@ -19,7 +19,7 @@ const defaultProps = {
   toggleButtonText: 'Collapse',
   expanded: false,
   autoCollapsing: false,
-  icon: IconArrowChevronLeft,
+  icon: <IconArrowChevronLeft size="custom" color="inherit" />,
   onClick: noop,
 };
 
@@ -38,7 +38,6 @@ export default function SidebarToggle(props) {
       <ToggleIconStyled
         expanded={props.expanded}
         autoCollapsing={props.autoCollapsing}
-        type="svg"
       >
         {icon}
       </ToggleIconStyled>

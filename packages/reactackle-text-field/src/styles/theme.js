@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {
   colorSecondary,
   bodyFontColor,
@@ -520,15 +522,9 @@ export default {
     },
   },
 
-  clearingIcon: {
-    src: IconCross,
-    type: 'svg',
-  },
+  clearingIcon: <IconCross size="custom" color="inherit" />,
 
-  passwordIcon: {
-    src: IconEye,
-    type: 'svg',
-  },
+  passwordIcon: <IconEye size="custom" color="inherit" />,
 
   message: {
     messageSpacing: bmodule(1),

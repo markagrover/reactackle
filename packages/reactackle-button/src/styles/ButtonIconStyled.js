@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { extractThemeOrDefault, getValueString } from 'reactackle-core';
-import { iconSvgSizeMixin, iconCustomSizeMixin } from 'reactackle-icons';
+import {
+  extractThemeOrDefault,
+  getValueString,
+  iconSizeMixin,
+} from 'reactackle-core';
 
 const propTypes = {
   /** Define button's size */
@@ -32,13 +35,12 @@ const iconStyleProps = ({
   `;
 };
 
-const iconSizeProps = ({ size, type, theme: themeFromProvider }) => {
+const iconSizeProps = ({ size, theme: themeFromProvider }) => {
   const theme = extractThemeOrDefault(themeFromProvider);
   const path = theme.reactackle.components.button.size[size].icon;
-  const sizeMixin = type === 'svg' ? iconSvgSizeMixin : iconCustomSizeMixin;
 
   return css`
-    ${sizeMixin(
+    ${iconSizeMixin(
       getValueString(path.width),
       getValueString(path.imgSize || path.width),
       getValueString(path.height || path.width),

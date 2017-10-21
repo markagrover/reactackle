@@ -100,8 +100,6 @@ export default class Button extends Component {
   }
 
   render() {
-    const icon = this.props.icon && React.cloneElement(this.props.icon, { size: 'custom' });
-
     const subtitle =
       this.props.text && this.props.subtitle
         ? <ButtonSubtitleStyled size={this.props.size}>
@@ -129,7 +127,7 @@ export default class Button extends Component {
             size={this.props.size}
             disabled={this.props.disabled}
           >
-            {icon}
+            {this.props.icon}
           </ButtonIconBoxStyled>
         : null;
 

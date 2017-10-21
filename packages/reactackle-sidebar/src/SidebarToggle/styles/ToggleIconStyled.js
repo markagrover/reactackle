@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { iconStyleMixin, iconSvgSizeMixin, iconCustomSizeMixin } from 'reactackle-icons';
+import { iconStyleMixin } from 'reactackle-icons';
 import {
   extractThemeOrDefault,
   getValueString,
   transition,
   media,
+  iconSizeMixin,
 } from 'reactackle-core';
 
 const propTypes = {
@@ -19,9 +20,8 @@ const defaultProps = {
 };
 
 /** Prop Receivers */
-const iconSize = ({ theme: themeFromProvider, type }) => {
+const iconSize = ({ theme: themeFromProvider }) => {
   const theme = extractThemeOrDefault(themeFromProvider);
-  const sizeMixin = type === 'svg' ? iconSvgSizeMixin : iconCustomSizeMixin;
   const {
     width,
     height,
@@ -29,7 +29,7 @@ const iconSize = ({ theme: themeFromProvider, type }) => {
   } = theme.reactackle.components.sidebar.toggleButton.icon;
 
   return css`    
-    ${sizeMixin(
+    ${iconSizeMixin(
       getValueString(height),
       getValueString(imgSize || height),
       getValueString(width || height),

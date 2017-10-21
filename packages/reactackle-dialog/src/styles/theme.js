@@ -1,3 +1,5 @@
+import React  from 'react';
+
 import {
   bmodule,
   radiusDefault,
@@ -40,11 +42,7 @@ export default {
     width: 40,
     height: null,
     imgSize: 24,
-
-    source: {
-      src: IconCross,
-      type: 'svg',
-    },
+    iconSrc: <IconCross size="custom" color="inherit" />,
 
     style: {
       color: bodyFontColor,
@@ -105,16 +103,6 @@ export default {
 
     borderWidth: 1,
     borderColor: colorBorder,
-  },
-
-  icon: {
-    close: {
-      source: {
-        name: 'times',
-        src: '',
-        type: 'font-awesome',
-      },
-    },
   },
 
   actions: {

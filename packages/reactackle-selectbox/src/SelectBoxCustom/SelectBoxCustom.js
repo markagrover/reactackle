@@ -302,14 +302,6 @@ class _SelectBoxCustom extends Component {
     const label = this._renderLabel(),
       message = this._renderMessage();
 
-    const iconSettingsPath = this.props.theme.reactackle.components.selectBox
-      .icon.source;
-
-    const icon = React.cloneElement(
-      iconSettingsPath.src,
-      { size: 'custom', color: 'currentColor' }// eslint-disable-line comma-dangle
-    );
-
     return (
       <SelectBoxStyled>
         <SelectBoxCustomStyled onClick={this._handleWrapperClick}>
@@ -340,9 +332,9 @@ class _SelectBoxCustom extends Component {
                   disabled={this.props.disabled}
                   focused={this.state.open}
                   colorScheme={this.props.colorScheme}
-                  type={iconSettingsPath.type}
                 >
-                  {icon}
+                  {this.props.theme.reactackle.components.selectBox
+                    .icon.src}
                 </ArrowIconStyled>
               </ButtonStyled>
               <AutoPosition

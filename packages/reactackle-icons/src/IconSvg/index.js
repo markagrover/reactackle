@@ -9,11 +9,9 @@ import IconDefault from './icons/IconDefault';
 import IconEye from './icons/IconEye';
 
 import { IconSvg } from './IconSvg';
-import { iconSvgSizeMixin } from './iconSvgSizeMixin';
 
 export {
   IconSvg,
-  iconSvgSizeMixin,
 
   IconArrowBack,
   IconArrowChevronLeft,

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import {
   IconSvg,
-  iconSvgSizeMixin,
+  iconSizeMixin,
 } from 'reactackle';
 
 import {
@@ -26,7 +26,7 @@ import Snippet5 from './snippets/5.snippet';
 
 
 const TestWrapper = styled.div`
-  ${iconSvgSizeMixin('70px', '50px', '50px')}
+  ${iconSizeMixin('70px', '50px', '50px')}
 `;
 
 export const IconSvgDemoRoute = () => (

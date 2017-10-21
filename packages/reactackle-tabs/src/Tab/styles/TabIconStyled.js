@@ -1,14 +1,17 @@
 import styled, { css } from 'styled-components';
-import { iconStyleMixin, iconSvgSizeMixin, iconCustomSizeMixin } from 'reactackle-icons';
-import { extractThemeOrDefault, getValueString } from 'reactackle-core';
+import { iconStyleMixin } from 'reactackle-icons';
+import {
+  extractThemeOrDefault,
+  getValueString,
+  iconSizeMixin,
+} from 'reactackle-core';
 
-const size = ({ theme: themeFromProvider, type }) => {
+const size = ({ theme: themeFromProvider }) => {
   const theme = extractThemeOrDefault(themeFromProvider);
-  const sizeMixin = type === 'svg' ? iconSvgSizeMixin : iconCustomSizeMixin;
   const { width, height, imgSize } = theme.reactackle.components.tabs.icon;
 
   return css`    
-    ${sizeMixin(
+    ${iconSizeMixin(
       getValueString(height || width),
       getValueString(imgSize || height),
       getValueString(width || height),

@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { iconStyleMixin, iconSvgSizeMixin, iconCustomSizeMixin } from 'reactackle-icons';
+import { iconStyleMixin } from 'reactackle-icons';
 
 import {
   extractThemeOrDefault,
   getValueString,
   transition,
+  iconSizeMixin,
 } from 'reactackle-core';
 
 import { CheckboxLabelStyled } from './CheckboxLabelStyled';
@@ -21,10 +22,9 @@ const defaultProps = {
 };
 
 /* Prop Receivers */
-const iconSize = ({ theme: themeFromProvider, type }) => {
+const iconSize = ({ theme: themeFromProvider }) => {
   const theme = extractThemeOrDefault(themeFromProvider);
   const path = theme.reactackle.components.checkbox;
-  const sizeMixin = type === 'svg' ? iconSvgSizeMixin : iconCustomSizeMixin;
   const { size, borderWidth } = path.input;
   const {
     imgSize,
@@ -34,7 +34,7 @@ const iconSize = ({ theme: themeFromProvider, type }) => {
   const outerSize = `calc(${getValueString(size)} - ${borderWidth * 2}px)`;
 
   return css`    
-    ${sizeMixin(
+    ${iconSizeMixin(
       outerSize,
       getValueString(imgSize || iconSize),
       outerSize,

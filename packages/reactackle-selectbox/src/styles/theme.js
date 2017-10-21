@@ -1,3 +1,5 @@
+import React  from 'react';
+
 import {
   bmodule,
   radiusDefault,
@@ -344,11 +346,7 @@ export default {
 
   icon: {
     iconTextSpacing: bmodule(0.5),
-
-    source: {
-      src: IconArrowDropDown,
-      type: 'svg',
-    },
+    src: <IconArrowDropDown size="custom" color="inherit" />,
 
     state: {
       color: 'inherit',

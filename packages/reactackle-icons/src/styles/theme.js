@@ -1,9 +1,11 @@
 import { radiusDefault } from 'reactackle-core';
 
 export default {
+  borderWidth: 1,
   borderRadius: radiusDefault,
 
   color: {
+    default: 'currentColor',
     light: 'rgba(255, 255, 255, 0.54)',
     dark: 'rgba(0, 0, 0, 0.54)',
   },

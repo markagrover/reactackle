@@ -1,3 +1,5 @@
+import React  from 'react';
+
 import {
   bmodule,
   colorTransparent,
@@ -66,11 +68,7 @@ export default {
   icon: {
     size: bmodule(2),
     imgSize: null,
-
-    source: {
-      src: IconCheck,
-      type: 'svg',
-    },
+    src: <IconCheck size="custom" color="currentColor" />,
 
     style: {
       color: colorTransparent,
