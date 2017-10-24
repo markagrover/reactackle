@@ -68,7 +68,7 @@ export default {
   icon: {
     size: bmodule(2),
     imgSize: null,
-    src: <IconCheck size="custom" color="currentColor" />,
+    src: () => <IconCheck size="custom" color="currentColor" />,
 
     style: {
       color: colorTransparent,

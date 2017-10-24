@@ -522,9 +522,9 @@ export default {
     },
   },
 
-  clearingIcon: <IconCross size="custom" color="inherit" />,
+  clearingIcon: () => <IconCross size="custom" color="inherit" />,
 
-  passwordIcon: <IconEye size="custom" color="inherit" />,
+  passwordIcon: () => <IconEye size="custom" color="inherit" />,
 
   message: {
     messageSpacing: bmodule(1),

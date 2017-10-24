@@ -42,7 +42,7 @@ export default {
     width: 40,
     height: null,
     imgSize: 24,
-    iconSrc: <IconCross size="custom" color="inherit" />,
+    iconSrc: () => <IconCross size="custom" color="inherit" />,
 
     style: {
       color: bodyFontColor,

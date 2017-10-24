@@ -346,7 +346,7 @@ export default {
 
   icon: {
     iconTextSpacing: bmodule(0.5),
-    src: <IconArrowDropDown size="custom" color="inherit" />,
+    src: () => <IconArrowDropDown size="custom" color="inherit" />,
 
     state: {
       color: 'inherit',
