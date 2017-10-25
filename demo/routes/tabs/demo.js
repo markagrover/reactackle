@@ -21,12 +21,12 @@ const tabs = [
   },
   {
     isSelected: false,
-    icon: IconDefault,
+    icon: <IconDefault />,
     text: 'Tab 2',
   },
   {
     isSelected: false,
-    icon: IconDefault,
+    icon: <IconDefault />,
     text: 'Tab 3',
   },
   {
@@ -36,7 +36,7 @@ const tabs = [
   {
     linkhref: '',
     isSelected: false,
-    icon: IconDefault,
+    icon: <IconDefault />,
   },
 ];
 
