@@ -2,10 +2,10 @@
 
 exports[`<RadioGroup/> handles onChange 1`] = `
 <div
-  className="RadioGroupStyled-gTxwVG hBEowv"
+  className="RadioGroupStyled__RadioGroupStyled-ihhnPC eZpICI"
 >
   <div
-    className="RadioStyled-hpxAZh NsuXP"
+    className="RadioStyled__RadioStyled-jaalqI gtjoZf"
   >
     <input
       checked={false}
@@ -17,7 +17,7 @@ exports[`<RadioGroup/> handles onChange 1`] = `
     />
     <label
       checked={false}
-      className="RadioLabelStyled-bUjqWi hsLRhB"
+      className="RadioLabelStyled__RadioLabelStyled-dllnoj CWJiP"
       disabled={false}
       htmlFor="radio-0"
     >
@@ -29,10 +29,10 @@ exports[`<RadioGroup/> handles onChange 1`] = `
 
 exports[`<RadioGroup/> handles onChange 2`] = `
 <div
-  className="RadioGroupStyled-gTxwVG hBEowv"
+  className="RadioGroupStyled__RadioGroupStyled-ihhnPC eZpICI"
 >
   <div
-    className="RadioStyled-hpxAZh NsuXP"
+    className="RadioStyled__RadioStyled-jaalqI gtjoZf"
   >
     <input
       checked={true}
@@ -44,7 +44,7 @@ exports[`<RadioGroup/> handles onChange 2`] = `
     />
     <label
       checked={true}
-      className="RadioLabelStyled-bUjqWi ggofYs"
+      className="RadioLabelStyled__RadioLabelStyled-dllnoj hmzvXm"
       disabled={false}
       htmlFor="radio-0"
     >
@@ -56,18 +56,18 @@ exports[`<RadioGroup/> handles onChange 2`] = `
 
 exports[`<RadioGroup/> handles props change 1`] = `
 <div
-  className="RadioGroupStyled-gTxwVG hBEowv"
+  className="RadioGroupStyled__RadioGroupStyled-ihhnPC eZpICI"
 />
 `;
 
 exports[`<RadioGroup/> handles props change 2`] = `
 <div
-  className="RadioGroupStyled-gTxwVG hBEowv"
+  className="RadioGroupStyled__RadioGroupStyled-ihhnPC eZpICI"
 />
 `;
 
 exports[`<RadioGroup/> renders correctly with default props 1`] = `
 <div
-  className="RadioGroupStyled-gTxwVG hBEowv"
+  className="RadioGroupStyled__RadioGroupStyled-ihhnPC eZpICI"
 />
 `;

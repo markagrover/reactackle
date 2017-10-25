@@ -2,14 +2,14 @@
 
 exports[`<Checkbox/> could one call onChange event before call change event on <input/> 1`] = `
 <div
-  className="CheckboxStyled-kzsMOt jKytSS"
+  className="CheckboxStyled__CheckboxStyled-dnBNsT bjrZmI"
 >
   <div
-    className="CheckboxElementStyled-dzeUmS kkKjA"
+    className="CheckboxElementStyled__CheckboxElementStyled-eusquv jZSihe"
   >
     <input
       checked={false}
-      className="CheckboxInputStyled-hCmkYE gPWRFM"
+      className="CheckboxInputStyled__CheckboxInputStyled-bhHAeW kTMpPw"
       disabled={false}
       id="checkbox-5"
       onChange={[Function]}
@@ -17,25 +17,29 @@ exports[`<Checkbox/> could one call onChange event before call change event on <
     />
     <label
       checked={false}
-      className="CheckboxLabelStyled-jYtRsS hHhrsW"
+      className="CheckboxLabelStyled__CheckboxLabelStyled-hsEWgd fNKgYD"
       disabled={false}
       htmlFor="checkbox-5"
     >
       <div
         checked={false}
-        className="CheckboxIconStyled-btfpTw emXegR"
+        className="CheckboxIconStyled-btfpTw iUAhEw"
         disabled={false}
-        type="svg"
       >
-        <svg
-          color="currentColor"
-          size="custom"
-          viewBox="0 0 24 24"
+        <div
+          className="IconSvgStyled-kZHpyB eCXPMZ"
+          color=""
+          rotate={0}
+          size="normal"
         >
-          <polygon
-            points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
-          />
-        </svg>
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
+            />
+          </svg>
+        </div>
       </div>
     </label>
   </div>
@@ -44,14 +48,14 @@ exports[`<Checkbox/> could one call onChange event before call change event on <
 
 exports[`<Checkbox/> renders correctly if prop checked set true 1`] = `
 <div
-  className="CheckboxStyled-kzsMOt jKytSS"
+  className="CheckboxStyled__CheckboxStyled-dnBNsT bjrZmI"
 >
   <div
-    className="CheckboxElementStyled-dzeUmS kkKjA"
+    className="CheckboxElementStyled__CheckboxElementStyled-eusquv jZSihe"
   >
     <input
       checked={true}
-      className="CheckboxInputStyled-hCmkYE gPWRFM"
+      className="CheckboxInputStyled__CheckboxInputStyled-bhHAeW kTMpPw"
       disabled={false}
       id="checkbox-1"
       onChange={[Function]}
@@ -59,25 +63,29 @@ exports[`<Checkbox/> renders correctly if prop checked set true 1`] = `
     />
     <label
       checked={true}
-      className="CheckboxLabelStyled-jYtRsS buFUCl"
+      className="CheckboxLabelStyled__CheckboxLabelStyled-hsEWgd eOqbqR"
       disabled={false}
       htmlFor="checkbox-1"
     >
       <div
         checked={true}
-        className="CheckboxIconStyled-btfpTw dCKRCB"
+        className="CheckboxIconStyled-btfpTw fnOqiJ"
         disabled={false}
-        type="svg"
       >
-        <svg
-          color="currentColor"
-          size="custom"
-          viewBox="0 0 24 24"
+        <div
+          className="IconSvgStyled-kZHpyB eCXPMZ"
+          color=""
+          rotate={0}
+          size="normal"
         >
-          <polygon
-            points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
-          />
-        </svg>
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
+            />
+          </svg>
+        </div>
       </div>
     </label>
   </div>
@@ -86,14 +94,14 @@ exports[`<Checkbox/> renders correctly if prop checked set true 1`] = `
 
 exports[`<Checkbox/> renders correctly if prop defaultChecked set true 1`] = `
 <div
-  className="CheckboxStyled-kzsMOt jKytSS"
+  className="CheckboxStyled__CheckboxStyled-dnBNsT bjrZmI"
 >
   <div
-    className="CheckboxElementStyled-dzeUmS kkKjA"
+    className="CheckboxElementStyled__CheckboxElementStyled-eusquv jZSihe"
   >
     <input
       checked={true}
-      className="CheckboxInputStyled-hCmkYE gPWRFM"
+      className="CheckboxInputStyled__CheckboxInputStyled-bhHAeW kTMpPw"
       disabled={false}
       id="checkbox-2"
       onChange={[Function]}
@@ -101,25 +109,29 @@ exports[`<Checkbox/> renders correctly if prop defaultChecked set true 1`] = `
     />
     <label
       checked={true}
-      className="CheckboxLabelStyled-jYtRsS buFUCl"
+      className="CheckboxLabelStyled__CheckboxLabelStyled-hsEWgd eOqbqR"
       disabled={false}
       htmlFor="checkbox-2"
     >
       <div
         checked={true}
-        className="CheckboxIconStyled-btfpTw dCKRCB"
+        className="CheckboxIconStyled-btfpTw fnOqiJ"
         disabled={false}
-        type="svg"
       >
-        <svg
-          color="currentColor"
-          size="custom"
-          viewBox="0 0 24 24"
+        <div
+          className="IconSvgStyled-kZHpyB eCXPMZ"
+          color=""
+          rotate={0}
+          size="normal"
         >
-          <polygon
-            points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
-          />
-        </svg>
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
+            />
+          </svg>
+        </div>
       </div>
     </label>
   </div>
@@ -128,14 +140,14 @@ exports[`<Checkbox/> renders correctly if prop defaultChecked set true 1`] = `
 
 exports[`<Checkbox/> renders correctly if prop disabled set true 1`] = `
 <div
-  className="CheckboxStyled-kzsMOt jKytSS"
+  className="CheckboxStyled__CheckboxStyled-dnBNsT bjrZmI"
 >
   <div
-    className="CheckboxElementStyled-dzeUmS kkKjA"
+    className="CheckboxElementStyled__CheckboxElementStyled-eusquv jZSihe"
   >
     <input
       checked={false}
-      className="CheckboxInputStyled-hCmkYE gPWRFM"
+      className="CheckboxInputStyled__CheckboxInputStyled-bhHAeW kTMpPw"
       disabled={true}
       id="checkbox-3"
       onChange={[Function]}
@@ -143,25 +155,29 @@ exports[`<Checkbox/> renders correctly if prop disabled set true 1`] = `
     />
     <label
       checked={false}
-      className="CheckboxLabelStyled-jYtRsS cSxtin"
+      className="CheckboxLabelStyled__CheckboxLabelStyled-hsEWgd kGhxfp"
       disabled={true}
       htmlFor="checkbox-3"
     >
       <div
         checked={false}
-        className="CheckboxIconStyled-btfpTw fKWktq"
+        className="CheckboxIconStyled-btfpTw dFiyvd"
         disabled={true}
-        type="svg"
       >
-        <svg
-          color="currentColor"
-          size="custom"
-          viewBox="0 0 24 24"
+        <div
+          className="IconSvgStyled-kZHpyB eCXPMZ"
+          color=""
+          rotate={0}
+          size="normal"
         >
-          <polygon
-            points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
-          />
-        </svg>
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
+            />
+          </svg>
+        </div>
       </div>
     </label>
   </div>
@@ -170,14 +186,14 @@ exports[`<Checkbox/> renders correctly if prop disabled set true 1`] = `
 
 exports[`<Checkbox/> renders correctly if prop label set test 1`] = `
 <div
-  className="CheckboxStyled-kzsMOt jKytSS"
+  className="CheckboxStyled__CheckboxStyled-dnBNsT bjrZmI"
 >
   <div
-    className="CheckboxElementStyled-dzeUmS jzQtWm"
+    className="CheckboxElementStyled__CheckboxElementStyled-eusquv hGRJyk"
   >
     <input
       checked={false}
-      className="CheckboxInputStyled-hCmkYE gPWRFM"
+      className="CheckboxInputStyled__CheckboxInputStyled-bhHAeW kTMpPw"
       disabled={false}
       id="checkbox-4"
       onChange={[Function]}
@@ -185,29 +201,33 @@ exports[`<Checkbox/> renders correctly if prop label set test 1`] = `
     />
     <label
       checked={false}
-      className="CheckboxLabelStyled-jYtRsS kXerKQ"
+      className="CheckboxLabelStyled__CheckboxLabelStyled-hsEWgd cIBKjD"
       disabled={false}
       htmlFor="checkbox-4"
     >
       <div
         checked={false}
-        className="CheckboxIconStyled-btfpTw emXegR"
+        className="CheckboxIconStyled-btfpTw iUAhEw"
         disabled={false}
-        type="svg"
       >
-        <svg
-          color="currentColor"
-          size="custom"
-          viewBox="0 0 24 24"
+        <div
+          className="IconSvgStyled-kZHpyB eCXPMZ"
+          color=""
+          rotate={0}
+          size="normal"
         >
-          <polygon
-            points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
-          />
-        </svg>
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
+            />
+          </svg>
+        </div>
       </div>
       <span>
         <span
-          className="LabelTextStyled-bIbjxo gblZEn"
+          className="LabelTextStyled__LabelTextStyled-cwgMXD deadId"
         >
           test
         </span>
@@ -219,14 +239,14 @@ exports[`<Checkbox/> renders correctly if prop label set test 1`] = `
 
 exports[`<Checkbox/> renders correctly with default props 1`] = `
 <div
-  className="CheckboxStyled-kzsMOt jKytSS"
+  className="CheckboxStyled__CheckboxStyled-dnBNsT bjrZmI"
 >
   <div
-    className="CheckboxElementStyled-dzeUmS kkKjA"
+    className="CheckboxElementStyled__CheckboxElementStyled-eusquv jZSihe"
   >
     <input
       checked={false}
-      className="CheckboxInputStyled-hCmkYE gPWRFM"
+      className="CheckboxInputStyled__CheckboxInputStyled-bhHAeW kTMpPw"
       disabled={false}
       id="checkbox-0"
       onChange={[Function]}
@@ -234,25 +254,29 @@ exports[`<Checkbox/> renders correctly with default props 1`] = `
     />
     <label
       checked={false}
-      className="CheckboxLabelStyled-jYtRsS hHhrsW"
+      className="CheckboxLabelStyled__CheckboxLabelStyled-hsEWgd fNKgYD"
       disabled={false}
       htmlFor="checkbox-0"
     >
       <div
         checked={false}
-        className="CheckboxIconStyled-btfpTw emXegR"
+        className="CheckboxIconStyled-btfpTw iUAhEw"
         disabled={false}
-        type="svg"
       >
-        <svg
-          color="currentColor"
-          size="custom"
-          viewBox="0 0 24 24"
+        <div
+          className="IconSvgStyled-kZHpyB eCXPMZ"
+          color=""
+          rotate={0}
+          size="normal"
         >
-          <polygon
-            points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
-          />
-        </svg>
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="9,19.4 3.3,13.7 4.7,12.3 9,16.6 19.8,5.8 21.2,7.2"
+            />
+          </svg>
+        </div>
       </div>
     </label>
   </div>

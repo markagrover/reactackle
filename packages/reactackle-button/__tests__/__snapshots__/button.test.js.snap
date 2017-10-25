@@ -109,12 +109,12 @@ exports[`<Button/> renders correctly if prop icon="custom" set 1`] = `
   title=""
 >
   <div
-    className="ButtonIconStyled__ButtonIconBoxStyled-hlFixJ kEAAOU"
+    className="ButtonIconStyled__ButtonIconBoxStyled-hlFixJ bgFbvh"
     disabled={false}
     size="normal"
   >
     <div
-      className="IconCustomStyled-ehOkKD diQUT"
+      className="IconCustomStyled-ehOkKD hlCqJd"
       color=""
       rotate={0}
       size="normal"
@@ -134,12 +134,12 @@ exports[`<Button/> renders correctly if prop icon="svg" set 1`] = `
   title=""
 >
   <div
-    className="ButtonIconStyled__ButtonIconBoxStyled-hlFixJ kEAAOU"
+    className="ButtonIconStyled__ButtonIconBoxStyled-hlFixJ bgFbvh"
     disabled={false}
     size="normal"
   >
     <div
-      className="IconSvgStyled-kZHpyB fZTytP"
+      className="IconSvgStyled-kZHpyB glFbZY"
       color=""
       rotate={0}
       size="normal"
@@ -265,11 +265,11 @@ exports[`<Button/> renders correctly if prop text set 1`] = `
   title=""
 >
   <div
-    className="ButtonTextStyled-kqmWUR foLdiD"
+    className="ButtonTextStyled__ButtonTextStyled-dokorR hQOORT"
     size="normal"
   >
     <div
-      className="ButtonTitleStyled-EwESb hkRlbG"
+      className="ButtonTitleStyled__ButtonTitleStyled-kwhLfn koUihP"
       size="normal"
     >
       test
@@ -288,11 +288,11 @@ exports[`<Button/> renders correctly if prop text="foo" set 1`] = `
   title=""
 >
   <div
-    className="ButtonTextStyled-kqmWUR foLdiD"
+    className="ButtonTextStyled__ButtonTextStyled-dokorR hQOORT"
     size="normal"
   >
     <div
-      className="ButtonTitleStyled-EwESb hkRlbG"
+      className="ButtonTitleStyled__ButtonTitleStyled-kwhLfn koUihP"
       size="normal"
     >
       foo
@@ -311,11 +311,11 @@ exports[`<Button/> renders correctly if props narrow false and radius rounded 1`
   title=""
 >
   <div
-    className="ButtonTextStyled-kqmWUR foLdiD"
+    className="ButtonTextStyled__ButtonTextStyled-dokorR hQOORT"
     size="normal"
   >
     <div
-      className="ButtonTitleStyled-EwESb hkRlbG"
+      className="ButtonTitleStyled__ButtonTitleStyled-kwhLfn koUihP"
       size="normal"
     >
       test
@@ -334,17 +334,17 @@ exports[`<Button/> renders correctly if props text and subtitle are set 1`] = `
   title=""
 >
   <div
-    className="ButtonTextStyled-kqmWUR foLdiD"
+    className="ButtonTextStyled__ButtonTextStyled-dokorR hQOORT"
     size="normal"
   >
     <div
-      className="ButtonSubtitleStyled-bFHACI laqQqJ"
+      className="ButtonSubtitleStyled__ButtonSubtitleStyled-gjOmZI jttTQz"
       size="normal"
     >
       sup
     </div>
     <div
-      className="ButtonTitleStyled-EwESb hkRlbG"
+      className="ButtonTitleStyled__ButtonTitleStyled-kwhLfn koUihP"
       size="normal"
     >
       test
