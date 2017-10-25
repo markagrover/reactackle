@@ -22,6 +22,7 @@ import {
 
 import {
   IconEye,
+  IconEyeClosed,
   IconCross,
 } from 'reactackle-icons';
 
@@ -523,8 +524,8 @@ export default {
   },
 
   clearingIcon: () => <IconCross size="custom" color="inherit" />,
-
-  passwordIcon: () => <IconEye size="custom" color="inherit" />,
+  passwordIconShow: () => <IconEye size="custom" color="inherit" />,
+  passwordIconHide: () => <IconEyeClosed size="custom" color="inherit" />,
 
   message: {
     messageSpacing: bmodule(1),

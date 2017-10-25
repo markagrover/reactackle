@@ -418,19 +418,30 @@ class _TextField extends Component {
   _renderInnerButton() {
     const componentPath = this.props.theme.reactackle.components.textfield;
 
-    const passwordIcon = React.cloneElement(
-      componentPath.passwordIcon,
+    const passwordIconShow = React.cloneElement(
+      componentPath.passwordIconShow,
       {
         onClick: this._handleHideValue,
       }// eslint-disable-line comma-dangle
     );
+
+    const passwordIconHide = React.cloneElement(
+      componentPath.passwordIconHide,
+      {
+        onClick: this._handleHideValue,
+      }// eslint-disable-line comma-dangle
+    );
+
     const clearingIcon = React.cloneElement(
       componentPath.clearingIcon,
       {
         onClick: this._handleClearValue,
       }// eslint-disable-line comma-dangle
     );
-    
+
+    const passwordIcon = this.state.hidden
+      ? passwordIconShow
+      : passwordIconHide;
 
     if (typeof this.state.hidden === 'boolean') {
       return (
@@ -617,9 +628,8 @@ class _TextField extends Component {
    */
   _renderTextField(textFieldProps) {
     const TextFieldElement = this.state.textFieldElement;
-    const isPassword = textFieldProps.type === 'password' && this.state.hidden;
-    const inputType = isPassword ? textFieldProps.type : 'text';
-
+    const isPasswordUnhidden = textFieldProps.type === 'password' && !this.state.hidden;
+    const inputType = isPasswordUnhidden ? 'text' : textFieldProps.type;
     return <TextFieldElement {...textFieldProps} type={inputType} />;
   }
 

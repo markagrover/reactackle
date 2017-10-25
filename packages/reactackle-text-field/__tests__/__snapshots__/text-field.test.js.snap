@@ -802,7 +802,11 @@ exports[`<TextField/> handless focus 1`] = `
                   },
                 },
               },
-              "passwordIcon": <IconEye
+              "passwordIconHide": <IconEyeClosed
+                color="inherit"
+                size="custom"
+      />,
+              "passwordIconShow": <IconEye
                 color="inherit"
                 size="custom"
       />,
@@ -3916,6 +3920,122 @@ exports[`<TextField/> renders correctly if prop slidingLabel set true, label set
 </div>
 `;
 
+exports[`<TextField/> renders correctly if prop slidingLabel set true, label set test, dense and iconOuter 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <label
+      className="LabelSlidingStyled__LabelSlidingStyled-iNRlTt ghbMlD"
+      disabled={false}
+      htmlFor="TextField_46"
+    >
+      <div
+        className="LabelTextStyled__LabelTextStyled-cwgMXD hfeooX"
+      >
+        test
+      </div>
+    </label>
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw jdsWzd"
+      disabled={false}
+    >
+      <label
+        className="IconOuterStyled__IconOuterStyled-fijAWU deGtEg"
+        disabled={false}
+        htmlFor="TextField_46"
+      >
+        <span
+          className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+          color=""
+          onClick={[Function]}
+          rotate={0}
+          size="normal"
+        />
+      </label>
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA hHuqwi"
+        disabled={false}
+      >
+        <input
+          autoComplete="off"
+          className="sc-hzDkRC hGfQfE"
+          disabled={false}
+          id="TextField_46"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly if prop slidingLabel set true, label set test, filled and iconOuter 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <label
+      className="LabelSlidingStyled__LabelSlidingStyled-iNRlTt LsEVD"
+      disabled={false}
+      htmlFor="TextField_49"
+    >
+      <div
+        className="LabelTextStyled__LabelTextStyled-cwgMXD hfeooX"
+      >
+        test
+      </div>
+    </label>
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw jotuG"
+      disabled={false}
+    >
+      <label
+        className="IconOuterStyled__IconOuterStyled-fijAWU gkoVuE"
+        disabled={false}
+        htmlFor="TextField_49"
+      >
+        <span
+          className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+          color=""
+          onClick={[Function]}
+          rotate={0}
+          size="normal"
+        />
+      </label>
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA hHuqwi"
+        disabled={false}
+      >
+        <input
+          autoComplete="off"
+          className="sc-fMiknA dUJlEB"
+          disabled={false}
+          id="TextField_49"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<TextField/> renders correctly if prop slidingLabel set true, label set test, fullWidth and dense 1`] = `
 <div
   className="TextFieldStyled-bdmlkn QIbv"
@@ -3947,6 +4067,122 @@ exports[`<TextField/> renders correctly if prop slidingLabel set true, label set
           className="sc-iRbamj jpWQEz"
           disabled={false}
           id="TextField_40"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly if prop slidingLabel set true, label set test, fullWidth and iconOuter 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <label
+      className="LabelSlidingStyled__LabelSlidingStyled-iNRlTt floVAA"
+      disabled={false}
+      htmlFor="TextField_47"
+    >
+      <div
+        className="LabelTextStyled__LabelTextStyled-cwgMXD hfeooX"
+      >
+        test
+      </div>
+    </label>
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw jnrtds"
+      disabled={false}
+    >
+      <label
+        className="IconOuterStyled__IconOuterStyled-fijAWU jYehZj"
+        disabled={false}
+        htmlFor="TextField_47"
+      >
+        <span
+          className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+          color=""
+          onClick={[Function]}
+          rotate={0}
+          size="normal"
+        />
+      </label>
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA jhaIQX"
+        disabled={false}
+      >
+        <input
+          autoComplete="off"
+          className="sc-jhAzac gqzHtY"
+          disabled={false}
+          id="TextField_47"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly if prop slidingLabel set true, label set test, fullWidth, dense and iconOuter 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <label
+      className="LabelSlidingStyled__LabelSlidingStyled-iNRlTt floVAA"
+      disabled={false}
+      htmlFor="TextField_48"
+    >
+      <div
+        className="LabelTextStyled__LabelTextStyled-cwgMXD hfeooX"
+      >
+        test
+      </div>
+    </label>
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw jnrtds"
+      disabled={false}
+    >
+      <label
+        className="IconOuterStyled__IconOuterStyled-fijAWU jYehZj"
+        disabled={false}
+        htmlFor="TextField_48"
+      >
+        <span
+          className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+          color=""
+          onClick={[Function]}
+          rotate={0}
+          size="normal"
+        />
+      </label>
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA jhaIQX"
+        disabled={false}
+      >
+        <input
+          autoComplete="off"
+          className="sc-fBuWsC iNVUoR"
+          disabled={false}
+          id="TextField_48"
           onBlur={[Function]}
           onChange={[Function]}
           onClick={[Function]}
@@ -4348,6 +4584,64 @@ exports[`<TextField/> renders correctly if prop value set test 1`] = `
 </div>
 `;
 
+exports[`<TextField/> renders correctly if proplabel set test, filled and iconOuter 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <label
+      className="LabelStyled__LabelStyled-chJxlj gKsfeD"
+      disabled={false}
+      htmlFor="TextField_65"
+    >
+      <div
+        className="LabelTextStyled__LabelTextStyled-cwgMXD hfeooX"
+      >
+        test
+      </div>
+    </label>
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw hjaZvM"
+      disabled={false}
+    >
+      <label
+        className="IconOuterStyled__IconOuterStyled-fijAWU gkoVuE"
+        disabled={false}
+        htmlFor="TextField_65"
+      >
+        <span
+          className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+          color=""
+          onClick={[Function]}
+          rotate={0}
+          size="normal"
+        />
+      </label>
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA hHuqwi"
+        disabled={false}
+      >
+        <input
+          autoComplete="off"
+          className="sc-jbKcbu febktZ"
+          disabled={false}
+          id="TextField_65"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<TextField/> renders correctly if state showLengthError set true 1`] = `
 <div
   className="TextFieldStyled-bdmlkn QIbv"
@@ -4456,6 +4750,465 @@ exports[`<TextField/> renders correctly with default props 1`] = `
           className="sc-bdVaJa bteGOT"
           disabled={false}
           id="TextField_0"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly with prop iconInner 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw hjaZvM"
+      disabled={false}
+    >
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA hHuqwi"
+        disabled={false}
+      >
+        <label
+          className="PrefixStyled__PrefixStyled-fueJis eyEwOB"
+          disabled={false}
+          htmlFor="TextField_114"
+        >
+          <div
+            className="IconInnerStyled__IconInnerStyled-pTXLj bDJxIX"
+            disabled={false}
+          >
+            <span
+              className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+              color=""
+              onClick={[Function]}
+              rotate={0}
+              size="normal"
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-cmthru eRIjZD"
+          disabled={false}
+          id="TextField_114"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly with prop iconInner and disabled 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw hjaZvM"
+      disabled={true}
+    >
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA eyzusd"
+        disabled={true}
+      >
+        <label
+          className="PrefixStyled__PrefixStyled-fueJis jbemzu"
+          disabled={true}
+          htmlFor="TextField_118"
+        >
+          <div
+            className="IconInnerStyled__IconInnerStyled-pTXLj deElkl"
+            disabled={true}
+          >
+            <span
+              className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+              color=""
+              onClick={[Function]}
+              rotate={0}
+              size="normal"
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-hORach kqMnVD"
+          disabled={true}
+          id="TextField_118"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly with prop iconInner and if focus 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw hjaZvM"
+      disabled={false}
+    >
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA dfUXvC"
+        disabled={false}
+      >
+        <label
+          className="PrefixStyled__PrefixStyled-fueJis TYoPb"
+          disabled={false}
+          htmlFor="TextField_120"
+        >
+          <div
+            className="IconInnerStyled__IconInnerStyled-pTXLj dnRJNw"
+            disabled={false}
+          >
+            <span
+              className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+              color=""
+              onClick={[Function]}
+              rotate={0}
+              size="normal"
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-bAeIUo lgLszz"
+          disabled={false}
+          id="TextField_120"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly with prop iconInner andcolorScheme set success 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw hjaZvM"
+      disabled={false}
+    >
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA edrYkE"
+        disabled={false}
+      >
+        <label
+          className="PrefixStyled__PrefixStyled-fueJis bDVqrZ"
+          disabled={false}
+          htmlFor="TextField_119"
+        >
+          <div
+            className="IconInnerStyled__IconInnerStyled-pTXLj bDJxIX"
+            disabled={false}
+          >
+            <span
+              className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+              color=""
+              onClick={[Function]}
+              rotate={0}
+              size="normal"
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-bMVAic jUlBqw"
+          disabled={false}
+          id="TextField_119"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly with prop iconInner, dense 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw hjaZvM"
+      disabled={false}
+    >
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA hHuqwi"
+        disabled={false}
+      >
+        <label
+          className="PrefixStyled__PrefixStyled-fueJis eIUZoZ"
+          disabled={false}
+          htmlFor="TextField_116"
+        >
+          <div
+            className="IconInnerStyled__IconInnerStyled-pTXLj bstpEK"
+            disabled={false}
+          >
+            <span
+              className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+              color=""
+              onClick={[Function]}
+              rotate={0}
+              size="normal"
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-cLQEGU fWKXLx"
+          disabled={false}
+          id="TextField_116"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly with prop iconInner, dense and fullWidth 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw cWJZUQ"
+      disabled={false}
+    >
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA jhaIQX"
+        disabled={false}
+      >
+        <label
+          className="PrefixStyled__PrefixStyled-fueJis jYfvIW"
+          disabled={false}
+          htmlFor="TextField_115"
+        >
+          <div
+            className="IconInnerStyled__IconInnerStyled-pTXLj gnawFy"
+            disabled={false}
+          >
+            <span
+              className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+              color=""
+              onClick={[Function]}
+              rotate={0}
+              size="normal"
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-hMFtBS jVWbpa"
+          disabled={false}
+          id="TextField_115"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly with prop iconInner, fullWidth 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw cWJZUQ"
+      disabled={false}
+    >
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA jhaIQX"
+        disabled={false}
+      >
+        <label
+          className="PrefixStyled__PrefixStyled-fueJis jYfvIW"
+          disabled={false}
+          htmlFor="TextField_117"
+        >
+          <div
+            className="IconInnerStyled__IconInnerStyled-pTXLj gnawFy"
+            disabled={false}
+          >
+            <span
+              className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+              color=""
+              onClick={[Function]}
+              rotate={0}
+              size="normal"
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-gqPbQI iZEVbV"
+          disabled={false}
+          id="TextField_117"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly with prop iconOuter 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw hjaZvM"
+      disabled={false}
+    >
+      <label
+        className="IconOuterStyled__IconOuterStyled-fijAWU gkoVuE"
+        disabled={false}
+        htmlFor="TextField_107"
+      >
+        <span
+          className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+          color=""
+          onClick={[Function]}
+          rotate={0}
+          size="normal"
+        />
+      </label>
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA hHuqwi"
+        disabled={false}
+      >
+        <input
+          autoComplete="off"
+          className="sc-epnACN xcvgH"
+          disabled={false}
+          id="TextField_107"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField/> renders correctly with prop iconOuter and disabled 1`] = `
+<div
+  className="TextFieldStyled__TextFieldStyled-LQiMh bRFqzw"
+>
+  <div
+    className="TextFieldContentBoxStyled__TextFieldContentBoxStyled-eUFbzZ iDAUec"
+  >
+    <div
+      className="TextFieldRowStyled__TextFieldRowStyled-iKawDw hjaZvM"
+      disabled={true}
+    >
+      <label
+        className="IconOuterStyled__IconOuterStyled-fijAWU jTkWbd"
+        disabled={true}
+        htmlFor="TextField_111"
+      >
+        <span
+          className="fa fa-customIcon IconFontAwesomeStyled__IconFontAwesomeStyled-cpbEq eVGVUG"
+          color=""
+          onClick={[Function]}
+          rotate={0}
+          size="normal"
+        />
+      </label>
+      <div
+        className="TextFieldGroupStyled__TextFieldGroupStyled-cIZJDA eyzusd"
+        disabled={true}
+      >
+        <input
+          autoComplete="off"
+          className="sc-cMhqgX cBEPKi"
+          disabled={true}
+          id="TextField_111"
+>>>>>>> master
           onBlur={[Function]}
           onChange={[Function]}
           onClick={[Function]}

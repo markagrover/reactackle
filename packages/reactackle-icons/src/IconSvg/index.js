@@ -7,6 +7,7 @@ import IconCheck from './icons/IconCheck';
 import IconCross from './icons/IconCross';
 import IconDefault from './icons/IconDefault';
 import IconEye from './icons/IconEye';
+import IconEyeClosed from './icons/IconEyeClosed';
 
 import { IconSvg } from './IconSvg';
 
@@ -22,4 +23,5 @@ export {
   IconCross,
   IconDefault,
   IconEye,
+  IconEyeClosed,
 };
