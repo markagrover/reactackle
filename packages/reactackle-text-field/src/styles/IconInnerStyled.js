@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { iconStyleMixin, iconSvgSizeMixin, iconCustomSizeMixin } from 'reactackle-icons';
+import { iconStyleMixin } from 'reactackle-icons';
 import {
   extractThemeOrDefault,
   getValueString,
   transition,
+  iconSizeMixin,
 } from 'reactackle-core';
 
 const propTypes = {
@@ -63,10 +64,9 @@ const iconStyle = ({
   `;
 };
 
-const iconSize = ({ dense, fullWidth, theme: themeFromProvider, type }) => {
+const iconSize = ({ dense, fullWidth, theme: themeFromProvider }) => {
   const theme = extractThemeOrDefault(themeFromProvider);
   const path = theme.reactackle.components.textfield.iconInner;
-  const sizeMixin = type === 'svg' ? iconSvgSizeMixin : iconCustomSizeMixin;
 
   let source = null;
   if (dense && !fullWidth) source = path.size.dense;
@@ -77,7 +77,7 @@ const iconSize = ({ dense, fullWidth, theme: themeFromProvider, type }) => {
   const { boxSize, imgSize } = source;
 
   return css`    
-    ${sizeMixin(
+    ${iconSizeMixin(
       getValueString(boxSize),
       getValueString(imgSize || boxSize),
       getValueString(boxSize),

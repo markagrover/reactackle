@@ -14,6 +14,8 @@ export function iconSizeMixin(
     height: ${height};
     line-height: ${height} !important;
     background-size: ${imgHeight};
+    align-items: center;
+    justify-content: center;
     
     ${imgHeight && `
       svg {

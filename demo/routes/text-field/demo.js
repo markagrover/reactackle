@@ -61,7 +61,7 @@ export const TextFieldDemoRoute = () => (
         code={SnippetMultiline}
       />
     </DemoSnippet>
-  
+
     <DemoSnippet title="TextField label">
       <DemoPreview>
         <FormItem>
@@ -217,7 +217,7 @@ export const TextFieldDemoRoute = () => (
             <TextField
               placeholder="Enter you value..."
               label="TextField with iconOuter"
-              iconOuter={IconDefault}
+              iconOuter={<IconDefault />}
             />
           </FormItem>
           <FormItem>
@@ -225,7 +225,7 @@ export const TextFieldDemoRoute = () => (
               bordered
               placeholder="Enter you value..."
               label="TextField with iconOuter"
-              iconOuter={IconDefault}
+              iconOuter={<IconDefault />}
             />
           </FormItem>
         </TestBox>
@@ -234,7 +234,7 @@ export const TextFieldDemoRoute = () => (
             <TextField
               placeholder="Enter you value..."
               label="TextField with iconInner"
-              iconInner={IconDefault}
+              iconInner={<IconDefault />}
             />
           </FormItem>
           <FormItem>
@@ -242,7 +242,7 @@ export const TextFieldDemoRoute = () => (
               bordered
               placeholder="Enter you value..."
               label="TextField with iconInner"
-              iconInner={IconDefault}
+              iconInner={<IconDefault />}
             />
           </FormItem>
         </TestBox>
@@ -286,7 +286,7 @@ export const TextFieldDemoRoute = () => (
               placeholder="Enter you value..."
               label="Disabled TextField"
               clearingIcon
-              iconOuter={IconDefault}
+              iconOuter={<IconDefault />}
             />
           </FormItem>
           <FormItem>
@@ -296,7 +296,7 @@ export const TextFieldDemoRoute = () => (
               placeholder="Enter you value..."
               label="Disabled TextField"
               clearingIcon
-              iconOuter={IconDefault}
+              iconOuter={<IconDefault />}
             />
           </FormItem>
         </TestBox>
@@ -309,7 +309,7 @@ export const TextFieldDemoRoute = () => (
               label="TextField with error"
               clearingIcon
               message="Some error happened"
-              iconOuter={IconDefault}
+              iconOuter={<IconDefault />}
             />
           </FormItem>
           <FormItem>
@@ -320,7 +320,7 @@ export const TextFieldDemoRoute = () => (
               label="TextField with error"
               clearingIcon
               message="Some error happened"
-              iconOuter={IconDefault}
+              iconOuter={<IconDefault />}
             />
           </FormItem>
         </TestBox>
@@ -333,7 +333,7 @@ export const TextFieldDemoRoute = () => (
               label="TextField with success"
               clearingIcon
               message="Successfully saved"
-              iconOuter={IconDefault}
+              iconOuter={<IconDefault />}
             />
           </FormItem>
           <FormItem>
@@ -344,7 +344,7 @@ export const TextFieldDemoRoute = () => (
               label="TextField with success"
               clearingIcon
               message="Successfully saved"
-              iconOuter={IconDefault}
+              iconOuter={<IconDefault />}
             />
           </FormItem>
         </TestBox>

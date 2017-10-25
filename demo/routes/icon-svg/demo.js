@@ -40,13 +40,6 @@ export const IconSvgDemoRoute = () => (
               <path d="M7,10l5,5l5-5H7z" />
             </svg>
           </IconSvg>
-          <IconSvg
-            src={
-              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
-                <path d="M7,10l5,5l5-5H7z" />
-              </svg>
-            }
-          />
         </TestBox>
       </DemoPreview>
       <DemoCode

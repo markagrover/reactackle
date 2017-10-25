@@ -55,7 +55,9 @@ const iconSizeProps = ({ size, theme: themeFromProvider }) => {
 
 export const ButtonIconBoxStyled = styled.div`
   order: ${props => (props.iconPositionRight ? '2' : '1')};
-  display: flex;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
   ${iconStyleProps};
   ${iconSizeProps};
 `;
