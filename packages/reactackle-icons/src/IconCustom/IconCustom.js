@@ -43,11 +43,11 @@ const defaultProps = {
 };
 
 export const IconCustom = props => {
-  const iconDefault = props.colorScheme === 'dark'
-    ? DEFAULT_ICON_DARK
-    : DEFAULT_ICON_LIGHT;
-
-    return (
+  const iconDefault = props.colorScheme === 'light'
+    ? DEFAULT_ICON_LIGHT
+    : DEFAULT_ICON_DARK;
+    
+  return (
     <IconCustomStyled
       border={props.border}
       borderWidth={props.borderWidth}
