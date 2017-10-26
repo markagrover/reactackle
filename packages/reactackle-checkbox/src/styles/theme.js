@@ -68,6 +68,7 @@ export default {
   icon: {
     size: bmodule(2),
     imgSize: null,
+    // eslint-disable-next-line react/display-name
     src: () => <IconCheck size="custom" color="currentColor" />,
 
     style: {

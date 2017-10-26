@@ -522,7 +522,7 @@ export default {
       },
     },
   },
-
+  /* eslint-disable react/display-name */
   clearingIcon: () => <IconCross size="custom" color="inherit" />,
   passwordIconShow: () => <IconEye size="custom" color="inherit" />,
   passwordIconHide: () => <IconEyeClosed size="custom" color="inherit" />,

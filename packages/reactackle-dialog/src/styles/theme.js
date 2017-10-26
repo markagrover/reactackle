@@ -42,6 +42,7 @@ export default {
     width: 40,
     height: null,
     imgSize: 24,
+    // eslint-disable-next-line react/display-name
     iconSrc: () => <IconCross size="custom" color="inherit" />,
 
     style: {

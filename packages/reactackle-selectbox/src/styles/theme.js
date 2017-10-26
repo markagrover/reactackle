@@ -346,6 +346,7 @@ export default {
 
   icon: {
     iconTextSpacing: bmodule(0.5),
+    // eslint-disable-next-line react/display-name
     src: () => <IconArrowDropDown size="custom" color="inherit" />,
 
     state: {
