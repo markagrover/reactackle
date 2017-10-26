@@ -3,12 +3,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import styled from 'styled-components';
-import { IconSvg, IconCustom, iconSvgSizeMixin } from '../src';
+import { iconSizeMixin } from 'reactackle-core';
+import { IconSvg, IconCustom } from '../src';
 
 jest.mock('react-dom');
 
 const TestWrapper = styled.div`
-  ${iconSvgSizeMixin('70px', '5px', '50px')}
+  ${iconSizeMixin('70px', '5px', '50px')}
 `;
 
 describe('<IconSvg/>', () => {
